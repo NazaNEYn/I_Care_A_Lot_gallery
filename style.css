@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/************ Background ********/
+
+.bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.555)), url(Img/Ethan-Image-1.jpg);
+    /* width: 100%;
+    height: 100vh; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    /* This is how I fixed tha background : CSS-Only Technique #2
+    https://css-tricks.com/perfect-full-page-background-image/ */
+    background-attachment: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+    filter: blur(8px);
+    transform: scale(1.1);
+    /* 1. Scale the backgrund pix to get rid of the white border  
+    2. set the  overflow: hidden; for the parent element
+    3. set parent's with and height */
+}
+
+.parent {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /* height: 100vh; */
+}
+
+
+/* Gallery Basic */
+
+ul {
+    width: 95%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    /* padding: 5px; */
+}
+
+
+/****** Hover ******/
+
+a {
+    transition: transform 0.3s, filter 0.3s;
+    filter: brightness(85%);
+}
+
+a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s, filter 0.3s;
+    filter: brightness(100%);
+}
+
+
+/*********  **********/
+
+
+/****** Responsive Web Design*******/
+
+
+/********  **********/
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    li {
+        width: 50%;
+        margin: 0 auto;
+    }
+    img {
+        width: 10%;
+        padding: 25px;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    li {
+        width: 50%;
+        margin: 0 auto;
+    }
+    img {
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    li {
+        width: 70%;
+        margin: 0 auto;
+    }
+    img {
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    li {
+        width: 20%;
+        margin: 0 auto;
+    }
+    img {
+        width: 100%;
+        padding: 5px;
+    }
+    .bg {
+        height: 300%;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media screen and (max-width: 600px) {
+    li {
+        width: 50%;
+        margin: 0 auto;
+    }
+    img {
+        width: 100%;
+        padding: 3px;
+    }
+}
