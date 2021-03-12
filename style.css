@@ -4,110 +4,159 @@
     box-sizing: border-box;
 }
 
-
-/************ Background ********/
-
-.bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.555)), url(Img/Ethan-Image-1.jpg);
-    /* width: 100%;
-    height: 100vh; */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    /* This is how I fixed tha background : CSS-Only Technique #2
-    https://css-tricks.com/perfect-full-page-background-image/ */
-    background-attachment: fixed;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    z-index: -1;
-    filter: blur(8px);
-    transform: scale(1.1);
-    /* 1. Scale the backgrund pix to get rid of the white border  
-    2. set the  overflow: hidden; for the parent element
-    3. set parent's with and height */
+html {
+    position: relative;
 }
 
-.parent {
-    position: relative;
-    overflow: hidden;
+body {
     width: 100%;
-    /* height: 100vh; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.568)), url(Img/Ethan-Image-1.jpg);
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(8px);
+    z-index: -1;
+    position: absolute;
 }
 
 
 /* Gallery Basic */
 
 ul {
-    width: 95%;
     display: flex;
-    margin: 0 auto;
     flex-wrap: wrap;
-}
-
-li {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
     overflow: hidden;
 }
 
-img {
-    width: 100%;
-    /* padding: 5px; */
+.pix {
+    padding-bottom: 70px;
+}
+
+
+/* Text section */
+
+p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto 0 auto;
+    text-align: center;
+}
+
+.text::after {
+    display: block;
+    content: "";
+    border-bottom: orange solid 2px;
+    width: 30%;
+    margin: 0 auto;
 }
 
 
 /****** Hover ******/
 
 a {
-    transition: transform 0.3s, filter 0.3s;
+    transition: transform 0.4s, filter 0.4s;
     filter: brightness(85%);
 }
 
 a:hover {
     transform: scale(1.1);
     transition: transform 0.3s, filter 0.3s;
-    filter: brightness(100%);
+    filter: brightness(110%);
+    filter: saturate(110%);
 }
-
-
-/*********  **********/
-
-
-/****** Responsive Web Design*******/
-
-
-/********  **********/
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
+    ul {
+        width: 80%;
+        margin: 20px auto;
+    }
     li {
-        width: 50%;
-        margin: 0 auto;
+        width: 17%;
     }
     img {
-        width: 10%;
-        padding: 25px;
+        width: 100%;
+        margin: auto 22px
+    }
+    p {
+        width: 40%;
+    }
+    .text::after {
+        width: 20%;
+        margin-top: 50px;
+    }
+    .pix {
+        margin-top: 300px;
+        padding-bottom: 100px;
     }
 }
 
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Extra small devices (phones, 600px and down) */
 
-@media only screen and (min-width: 992px) {
+@media screen and (max-width: 600px) {
+    body {
+        background-position: center;
+        /* height: 200vh; */
+    }
+    ul {
+        width: 100%;
+    }
     li {
-        width: 50%;
-        margin: 0 auto;
+        width: 70%;
+        margin: 30px auto;
     }
     img {
         width: 100%;
-        padding: 5px;
+        padding: 5px 10px;
+    }
+    p {
+        width: 60%;
+    }
+    .text::after {
+        margin: 30px auto 220px auto;
+    }
+    .pix {
+        margin-top: 300px;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    ul {
+        width: 100%;
+        margin: 20px auto;
+    }
+    li {
+        width: 43%;
+    }
+    img {
+        width: 100%;
+        padding: 5px 10px;
+    }
+    p {
+        width: 60%;
+    }
+    .text::after {
+        width: 20%;
+        margin: 30px auto 220px auto;
     }
 }
 
@@ -116,42 +165,17 @@ a:hover {
 
 @media only screen and (min-width: 768px) {
     li {
-        width: 70%;
+        width: 46%;
         margin: 0 auto;
     }
     img {
         width: 100%;
-        padding: 5px;
+        /* padding: 0 10px; */
     }
-}
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-
-@media only screen and (min-width: 600px) {
-    li {
-        width: 20%;
-        margin: 0 auto;
+    ul {
+        width: 80%;
     }
-    img {
-        width: 100%;
-        padding: 5px;
-    }
-    .bg {
-        height: 300%;
-    }
-}
-
-
-/* Extra small devices (phones, 600px and down) */
-
-@media screen and (max-width: 600px) {
-    li {
-        width: 50%;
-        margin: 0 auto;
-    }
-    img {
-        width: 100%;
-        padding: 3px;
+    .pix {
+        margin-top: 300px;
     }
 }
