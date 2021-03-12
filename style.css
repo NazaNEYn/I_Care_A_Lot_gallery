@@ -10,7 +10,7 @@ html {
 
 body {
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.568)), url(Img/Ethan-Image-1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0.699)), url(Img/Ethan-Image-1.jpg);
     background-position: right;
     background-size: cover;
     background-attachment: fixed;
@@ -79,40 +79,11 @@ a:hover {
 }
 
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media only screen and (min-width: 1200px) {
-    ul {
-        width: 80%;
-        margin: 20px auto;
-    }
-    li {
-        width: 17%;
-    }
-    img {
-        width: 100%;
-        margin: auto 22px
-    }
-    p {
-        width: 40%;
-    }
-    .text::after {
-        width: 20%;
-        margin-top: 50px;
-    }
-    .pix {
-        margin-top: 300px;
-        padding-bottom: 100px;
-    }
-}
-
-
 /* Extra small devices (phones, 600px and down) */
 
 @media screen and (max-width: 600px) {
     body {
         background-position: center;
-        /* height: 200vh; */
     }
     ul {
         width: 100%;
@@ -158,6 +129,9 @@ a:hover {
         width: 20%;
         margin: 30px auto 220px auto;
     }
+    .pix {
+        margin-top: 300px;
+    }
 }
 
 
@@ -170,12 +144,58 @@ a:hover {
     }
     img {
         width: 100%;
-        /* padding: 0 10px; */
+        margin: 0 15px;
     }
     ul {
         width: 80%;
     }
     .pix {
         margin-top: 300px;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    li {
+        width: 40%;
+        margin: 0 auto;
+    }
+    img {
+        width: 100%;
+        padding: 5px;
+        margin: 0 50px;
+    }
+    ul {
+        width: 90%;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    ul {
+        width: 80%;
+        margin: 20px auto;
+    }
+    li {
+        width: 22%;
+    }
+    img {
+        width: 100%;
+        margin: auto 22px
+    }
+    p {
+        width: 40%;
+    }
+    .text::after {
+        width: 20%;
+        margin-top: 50px;
+    }
+    .pix {
+        margin-top: 300px;
+        padding-bottom: 100px;
     }
 }
