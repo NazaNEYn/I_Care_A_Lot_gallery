@@ -53,6 +53,9 @@ p {
     align-items: center;
     margin: 100px auto 0 auto;
     text-align: center;
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 100%;
+    line-height: 30px;
 }
 
 .text::after {
@@ -189,6 +192,7 @@ a:hover {
     }
     p {
         width: 40%;
+        font-size: 120%;
     }
     .text::after {
         width: 20%;
