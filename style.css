@@ -1,109 +1,205 @@
-<!DOCTYPE html>
-<html lang="en">
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I Care A Lot Gallery</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
-</head>
+html {
+    position: relative;
+}
 
-<body>
-
-    <!-- blurry background -->
-    <div class="bg"></div>
-
-
-    <!-- Gallery Section -->
-    <section class="gallery-section">
-
-
-        <div class="text">
-            <p>I've recently watched "I care a lot" and loved it. so I thought maybe dedicate a small project to it. It's nothing fancy or anything but I hope you like it lol.
-            </p>
-        </div>
-
-        <section class="pix">
-            <ul>
-                <li>
-                    <a href="https://cdn1.bbcode0.com/uploads/2021/3/15/120d084bf280667937dae37a6bf53f4d-full.jpg"><img src="Img/IMG_20210227_173236.jpg" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://cdn1.bbcode0.com/uploads/2021/3/15/e2d44d9d7af93ff546e9cdb2ceaee381-full.jpg"><img src="Img/i-care-a-lot-review.jpg" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://cdn1.bbcode0.com/uploads/2021/3/15/afeb75780ed68b2483ab68fa9f54c1ed-full.jpg"><img src="Img/i-care-a-lot.jpg" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://cdn1.bbcode0.com/uploads/2021/3/15/9dbc5be8169380ed108da8b4e5925c2d-full.jpg"><img src="Img/IMG_20210227_173512.jpg" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://cdn1.bbcode0.com/uploads/2021/3/15/b9e603fcaeb2b92c66d4342832a595cc-full.jpg"> <img src="Img/giorgio_armani_sf_3766.jpg" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://cdn1.bbcode0.com/uploads/2021/3/15/7f3fc4467fab3dda2fe4a2fb01dffbeb-full.jpg"><img src="Img/IMG_20210227_203421.jpg" alt=""></a>
-                </li>
-                <li>
-
-                    <a href="https://cdn1.bbcode0.com/uploads/2021/3/15/d679067bea0f975d761f6aff836dc65c-full.jpg"> <img src="Img/IMG_20210311_115840.jpg" alt=""></a>
-                </li>
-                <li>
-
-                    <a href="https://cdn1.bbcode0.com/uploads/2021/3/15/6e12f4dcf81bc5ff00067e3e46886fde-full.jpg"> <img src="Img/IMG_20210307_173615.jpg" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://cdn1.bbcode0.com/uploads/2021/3/15/3ffe7763513cda0f7c5f4b0b30a4f3f6-full.jpg"> <img src="Img/IMG_20210305_173503.jpg" alt=""></a>
-                </li>
-                <li>
-
-                    <a href="https://cdn1.bbcode0.com/uploads/2021/3/15/bc7d6538657775b3d4a2ae27a91f4567-full.jpg"> <img src="Img/IMG_20210310_212510.jpg" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://cdn1.bbcode0.com/uploads/2021/3/15/d6e6d0373a3a808c2e243c0cf8f4e6a4-full.jpg"> <img src="Img/IMG_20210308_174925.jpg" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://cdn1.bbcode0.com/uploads/2021/3/15/70d7e6727f35f67e0e0e6c11b62e496c-full.jpg"> <img src="Img/IMG_20210310_052233.jpg" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://cdn1.bbcode0.com/uploads/2021/3/15/e26cf87a99135c61c6819f124fa3f7e0-full.jpg"><img src="Img/IMG_20210227_173513.jpg" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://cdn1.bbcode0.com/uploads/2021/3/15/f1ea9207956d96022251f07b4046c680-full.png"> <img src="Img/IMG_20210305_150705.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://cdn1.bbcode0.com/uploads/2021/3/15/c5bfe5584d2790d559cfcd91740f56b7-full.png"> <img src="Img/IMG_20210305_150708.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://cdn1.bbcode0.com/uploads/2021/3/15/58639021af94e09f21a10ac12411d0b0-full.png"> <img src="Img/vlcsnap-2021-03-05-23h57m54s494.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://cdn1.bbcode0.com/uploads/2021/3/15/7fdfebcbd933d261924b3e602b6384b9-full.png"> <img src="Img/vlcsnap-2021-03-05-23h58m35s521.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://cdn1.bbcode0.com/uploads/2021/3/15/f7058419e54d86a608c924fdb8151ffe-full.png"> <img src="Img/vlcsnap-2021-03-06-00h20m34s882.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://cdn1.bbcode0.com/uploads/2021/3/15/5df9bf5ca804f5e70b576d732247c835-full.png"> <img src="Img/vlcsnap-2021-03-06-00h29m11s740.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="https://cdn1.bbcode0.com/uploads/2021/3/15/6e34c5ebd0b9244592160c8026ed1a71-full.jpg"> <img src="Img/IMG_20210311_021830.jpg" alt=""></a>
-                </li>
+body {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0.699)), url(Img/Ethan-Image-1.jpg);
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(8px);
+    z-index: -1;
+    position: absolute;
+}
 
 
-            </ul>
-        </section>
+/* Gallery Basic */
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    overflow: hidden;
+}
+
+.pix {
+    padding-bottom: 70px;
+}
 
 
-    </section>
+/* Text section */
+
+p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto 0 auto;
+    text-align: center;
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 100%;
+    line-height: 30px;
+}
+
+.text::after {
+    display: block;
+    content: "";
+    border-bottom: orange solid 2px;
+    width: 30%;
+    margin: 0 auto;
+}
 
 
+/****** Hover ******/
+
+a {
+    transition: transform 0.4s, filter 0.4s;
+    filter: brightness(85%);
+}
+
+a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s, filter 0.3s;
+    filter: brightness(110%);
+    filter: saturate(110%);
+}
 
 
+/* Extra small devices (phones, 600px and down) */
+
+@media screen and (max-width: 600px) {
+    body {
+        background-position: center;
+    }
+    ul {
+        width: 100%;
+    }
+    li {
+        width: 70%;
+        margin: 30px auto;
+    }
+    img {
+        width: 100%;
+        padding: 5px 10px;
+    }
+    p {
+        width: 60%;
+    }
+    .text::after {
+        margin: 30px auto 220px auto;
+    }
+    .pix {
+        margin-top: 300px;
+    }
+}
 
 
-</body>
+/* Small devices (portrait tablets and large phones, 600px and up) */
 
-</html>
+@media only screen and (min-width: 600px) {
+    ul {
+        width: 100%;
+        margin: 20px auto;
+    }
+    li {
+        width: 43%;
+    }
+    img {
+        width: 100%;
+        padding: 5px 10px;
+    }
+    p {
+        width: 60%;
+    }
+    .text::after {
+        width: 20%;
+        margin: 30px auto 220px auto;
+    }
+    .pix {
+        margin-top: 300px;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    li {
+        width: 46%;
+        margin: 0 auto;
+    }
+    img {
+        width: 100%;
+        margin: 0 15px;
+    }
+    ul {
+        width: 80%;
+    }
+    .pix {
+        margin-top: 300px;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    li {
+        width: 40%;
+        margin: 0 auto;
+    }
+    img {
+        width: 100%;
+        padding: 5px;
+        margin: 0 50px;
+    }
+    ul {
+        width: 90%;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    ul {
+        width: 80%;
+        margin: 20px auto;
+    }
+    li {
+        width: 22%;
+    }
+    img {
+        width: 100%;
+        margin: auto 22px
+    }
+    p {
+        width: 40%;
+        font-size: 120%;
+    }
+    .text::after {
+        width: 20%;
+        margin-top: 50px;
+    }
+    .pix {
+        margin-top: 300px;
+        padding-bottom: 100px;
+    }
+}
